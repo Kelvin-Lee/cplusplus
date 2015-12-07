@@ -18,6 +18,8 @@ class Receipt
 
 	// Getters
 
+	const unsigned short getTotalcost();
+
 	// IO
 
 	const void printReceipt();
@@ -25,8 +27,6 @@ class Receipt
 	// Misc.
 
 	unsigned short addPurchase(Purchase p);
-
-	const unsigned short getTotalcost();
 
 	Receipt& operator=(const Receipt& r);
 
@@ -38,8 +38,6 @@ class Receipt
 	unsigned short m_totalcost;
 
 	const bool hasPurchased (Purchase);
-
-	/* unsigned short sumPurchases(); */
 
 	Purchase* getPurchase(Purchase p);
 
