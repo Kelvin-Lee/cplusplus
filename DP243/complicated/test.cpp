@@ -39,6 +39,7 @@ int main()
    
     std::cout << "Check r" << std::endl;
     r.printReceipt();
+    std::cout << std::endl;
 
     Receipt s;
 
@@ -49,13 +50,15 @@ int main()
 
     std::cout << "Check s" << std::endl;
     s.printReceipt();
+    std::cout << std::endl;
+
 
     s = s + r;
 
     std::cout << "Check s (= s + r)" << std::endl;
     s.printReceipt();
+    std::cout << std::endl;
 
-/*
     Catalog_Entry A = {"banana", 32};
     Catalog_Entry B = {"kiwi", 41};
     Catalog_Entry C = {"mango", 97};
@@ -74,7 +77,6 @@ int main()
         std::cout << Catalog[i].name << " has a price of " << 
 	    Catalog[i].price << std::endl;
     }
-*/
 
     return 0;
 

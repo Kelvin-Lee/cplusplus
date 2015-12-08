@@ -1,16 +1,6 @@
-At its current state, the classes seem to work. Algorithm for actually solving
-the problem is not yet working (currently looking to use
-recrusion/backtracking).
+2015-12-7th
 
-Concepts practiced:
-* operator overloading (assignment= and addition+)
-* initializer lists and default parameters
-* deep copy consturctors
-* dynamic allocation
-* pointers
-* use of std::vector
+Success :D
 
-Still need to write:
-* custom destructors
-
-No makefile, just use "g++ test.cpp"
+* Compile 'solve.cpp' and run to output the solutions for the challenge input.
+* 'test.cpp' is just a .cpp intended to test the functionality of the classes, but does no solving

@@ -26,11 +26,6 @@ Receipt::Receipt(const Receipt &r)
 
 // Getters
 
-const unsigned short Receipt::getTotalcost()
-{
-    return m_totalcost;
-}
-
 // IO
 const void Receipt::printReceipt()
 {
@@ -61,13 +56,16 @@ unsigned short Receipt::addPurchase(Purchase p)
 
 }
 
+const unsigned short Receipt::getTotalcost()
+{
+    return m_totalcost;
+}
 
 
 Receipt& Receipt::operator=(const Receipt& r)
 {
     if (this == &r)
     {
-    	std::cout << "LOL" << std::endl;
         return *this;
     }
 
@@ -99,6 +97,18 @@ Receipt& Receipt::operator+(const Receipt& r)
 }
 
 /* --------------------- Private --------------------- */
+/*
+unsigned short Receipt::sumPurchases()
+{
+    unsigned short sum = 0;
+    for (unsigned short i = 0; i < m_purchases->size(); i++)
+    {
+       sum += (*m_purchases)[i].getTotalCost(); 
+    }
+    m_totalcost = sum;
+    return sum;
+}
+*/
 
 Purchase* Receipt::getPurchase(Purchase p)
 {
